@@ -12,11 +12,44 @@ html,body{
 	height:90%;
 	width:100%;
 }
-img.logo{
-	padding:10px;
-	float:left;
-	height:5%;
+.slogan{
+	height:60%;
+	width:40%;
+	padding:10%;
 }
+.text{
+	width: 40%;
+    height: 10%;
+    position: absolute;
+    left: 15%;
+    top:35%;
+    animation-name: text;
+    animation-duration: 2s;
+}
+@keyframes text{
+	from {left:11%;}
+    to {left:15%;}
+}
+img.bar{
+	position: absolute;
+    top: 30%;
+	float: left;
+	height:35%;
+}
+img.design{
+	position: absolute;
+	padding:1%;
+    top: 5%;
+	float:left;
+	height:70%;
+
+}
+img.logo{
+	padding:30px;
+	float:left;
+	width:5%;
+}
+
 
 .buttons {
 	background-size: 100%;
