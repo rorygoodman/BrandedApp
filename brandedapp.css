@@ -16,8 +16,44 @@ html,body{
 	height:60%;
 	width:40%;
 	padding:10%;
+	
+}
+.right{
+	position:absolute;
+	top:0;
+	right:0;
+	height:90%;
+	width:40%;
+}
+.info{
+	
+	position:absolute;
+	bottom:0;
+	border-style: solid;
+	width:70%;
+	height:15%;
+}
+h4.infotext{
+	color: white;
+	font-family: petita;
+	opacity: 1;
+	text-align: center;
+	animation-name: textappear;
+    animation-duration: 2s;
+}
+@keyframes textappear{
+	from {opacity:0;}
+    to {opacity:1;}
+}
+
+@font-face {
+    font-family: petita;
+    src: url(PetitaBold.ttf);
 }
 .text{
+	font-family: petita;
+	color: white;
+	z-index: 1;
 	width: 40%;
     height: 10%;
     position: absolute;
@@ -30,6 +66,10 @@ html,body{
 	from {left:11%;}
     to {left:15%;}
 }
+img.phone{
+	position:position: absolute;
+	top:0;
+}
 img.bar{
 	position: absolute;
     top: 30%;
@@ -38,7 +78,7 @@ img.bar{
 }
 img.design{
 	position: absolute;
-	padding:1%;
+	padding:-10px%;
     top: 5%;
 	float:left;
 	height:70%;
