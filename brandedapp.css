@@ -25,16 +25,34 @@ html,body{
 	height:90%;
 	width:40%;
 }
+.phones{
+	position:absolute;
+	top:6%;
+	left:14%;
+	height:75%;
+	width:42%;
+
+}
+.slideshow{
+	position:absolute;
+	top:11%;
+	left:4.5%;
+	height:78%;
+	width:91%;
+	
+}
+
 .info{
 	
 	position:absolute;
-	bottom:0;
-	border-style: solid;
+	bottom:2%;
 	width:70%;
 	height:15%;
 }
 #infotext{
 	color: white;
+	padding-top: 3%;
+	padding-bottom: 10%;
 	font-family: petita;
 	opacity: 1;
 	text-align: center;
@@ -42,8 +60,10 @@ html,body{
 	animation-name: textappear;
     animation-duration: 2s;
     animation-delay:0s;
+    -webkit-animation-iteration-count:1;
     animation-iteration-count:1;
-    animation-direction:alternate;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
 }
 @keyframes textappear{
 	from {opacity:0;}
@@ -70,31 +90,48 @@ html,body{
 	from {left:11%;}
     to {left:15%;}
 }
-img.topbar{
+#topbar{
 	width:50%;
 	position:absolute;
 	right:0%;
+	top:0%;
 	animation-name: topan;
     animation-duration: 2s;
+    animation-direction:normal;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay:.2s;
 }
 @keyframes topan{
 	from {right:25%;}
     to {right:0%;}
 }
-img.bottombar{
+#bottombar{
 	width:50%;
 	position:absolute;
 	left:0%;
+	bottom:0%;
 	animation-name: bottoman;
     animation-duration: 2s;
+    animation-direction:normal;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay:.2s;
 }
 @keyframes bottoman{
 	from {left:25%;}
     to {left:0%;}
 }
-img.phone{
-	position:position: absolute;
+img.phonecontainer{
+	position: absolute;
 	top:0;
+	height:100%;
+	width:100%;
+}
+img.phone{
+	position: absolute;
+	top:0;
+	height:100%;
 }
 img.bar{
 	position: absolute;
@@ -108,15 +145,12 @@ img.design{
     top: 5%;
 	float:left;
 	height:70%;
-
 }
 img.logo{
 	padding:30px;
 	float:left;
 	width:5%;
 }
-
-
 .buttons {
 	background-size: 100%;
 	height:10%;
