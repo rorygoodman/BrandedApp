@@ -5,56 +5,149 @@ var info = ["Discover and connect with the right people to promote your brand",
   "Formatted menu, explore our application with ease"];
 var i=0;
 var iterations=1;
-function next(n){
-	if(i>=n-1){
-		i=0 ;
-	}
-	var infotext = document.getElementById("infotext");
-	var topbar = document.getElementById("topbar");
-	var bottombar = document.getElementById("bottombar");
-	iterations++;
-	fadeText(infotext);
-	closeBars(topbar,bottombar);
-	i++;
-	setTimeout(function(){
-		infotext.innerHTML = info[i];
-		iterations++;	
-		unFadeText(infotext);
-		openBars(topbar,bottombar);
-	},1200)
-	console.log(iterations);
+function phone1(){
+	var phone1 = document.getElementById('p1');
+	var phone2 = document.getElementById('p2');
+	var phone3 = document.getElementById('p3');
+	var phone4 = document.getElementById('p4');
+	phone1.style.height="70%";
+	phone1.style.opacity ="1";
+	phone1.style.left="0%";
+	phone1.style.bottom="20%";
+	phone1.style.zIndex="4";
+
+	phone2.style.height="60%";
+	phone2.style.opacity =".66";
+	phone2.style.left="15%";
+	phone2.style.bottom="25%";
+	phone2.style.zIndex="3";
+
+	phone3.style.height="40%";
+	phone3.style.opacity =".33";
+	phone3.style.left="30%";
+	phone3.style.bottom="30%";
+	phone3.style.zIndex="2";
+
+	phone4.style.height="40%";
+	phone4.style.opacity ="0";
+	phone4.style.left="40%";
+	phone4.style.bottom="30%";
+	phone4.style.zIndex="1";
+	displaytext(1);
+	return;
+	
+}
+function phone2(){
+	var phone1 = document.getElementById('p1');
+	var phone2 = document.getElementById('p2');
+	var phone3 = document.getElementById('p3');
+	var phone4 = document.getElementById('p4');
+	phone1.style.height="60%";
+	phone1.style.opacity =".66";
+	phone1.style.left="10%";
+	phone1.style.bottom="25%";
+	phone1.style.zIndex="3";
+
+	phone2.style.height="70%";
+	phone2.style.opacity ="1";
+	phone2.style.left="20%";
+	phone2.style.bottom="20%";
+	phone2.style.zIndex="4";
+
+	phone3.style.height="60%";
+	phone3.style.opacity =".66";
+	phone3.style.left="35%";
+	phone3.style.bottom="25%";
+	phone3.style.zIndex="3";
+
+	phone4.style.height="40%";
+	phone4.style.opacity ="0";
+	phone4.style.left="40%";
+	phone4.style.bottom="30%";
+	phone4.style.zIndex="2";
+	displaytext(2);
 	return;
 }
-function fadeText(infotext){
-	infotext.style.animationDirection = "reverse";
-	infotext.style.animationIterationCount = iterations;
-	infotext.webkitAnimationIterationCount = iterations;
+function phone3(){
+	var phone1 = document.getElementById('p1');
+	var phone2 = document.getElementById('p2');
+	var phone3 = document.getElementById('p3');
+	var phone4 = document.getElementById('p4');
+	phone1.style.height="40%";
+	phone1.style.opacity ="0";
+	phone1.style.left="10%";
+	phone1.style.bottom="30%";
+	phone1.style.zIndex="2";
+
+	phone2.style.height="60%";
+	phone2.style.opacity =".66";
+	phone2.style.left="15%";
+	phone2.style.bottom="25%";
+	phone2.style.zIndex="3";
+
+	phone3.style.height="70%";
+	phone3.style.opacity ="1";
+	phone3.style.left="25%";
+	phone3.style.bottom="20%";
+	phone3.style.zIndex="4";
+
+	phone4.style.height="60%";
+	phone4.style.opacity =".66";
+	phone4.style.left="40%";
+	phone4.style.bottom="25%";
+	phone4.style.zIndex="3";
+	displaytext(3);
 	return;
 }
-function unFadeText(infotext){
-	infotext.style.animationDirection = "normal";
-	infotext.style.animationIterationCount = iterations;
-	infotext.style.webkitAnimationIterationCount = iterations;
+function phone4(){
+	var phone1 = document.getElementById('p1');
+	var phone2 = document.getElementById('p2');
+	var phone3 = document.getElementById('p3');
+	var phone4 = document.getElementById('p4');
+	phone1.style.height="40%";
+	phone1.style.opacity ="0";
+	phone1.style.left="0%";
+	phone1.style.bottom="30%";
+	phone1.style.zIndex="1";
+
+	phone2.style.height="40%";
+	phone2.style.opacity =".33";
+	phone2.style.left="20%";
+	phone2.style.bottom="30%";
+	phone2.style.zIndex="2";
+
+	phone3.style.height="60%";
+	phone3.style.opacity =".66";
+	phone3.style.left="30%";
+	phone3.style.bottom="25%";
+	phone3.style.zIndex="3";
+
+	phone4.style.height="70%";
+	phone4.style.opacity ="1";
+	phone4.style.left="40%";
+	phone4.style.bottom="20%";
+	phone4.style.zIndex="4";
+	displaytext(4);
 	return;
 }
-function closeBars(topbar,bottombar){
-	topbar.style.animationDirection = "reverse";
-	bottombar.style.animationDirection = "reverse";
-	topbar.style.animationIterationCount = iterations;
-	bottombar.style.animationIterationCount = iterations;
-	return;
-}
-function openBars(topbar,bottombar){
-	topbar.style.animationDirection = "normal";
-	bottombar.style.animationDirection = "normal";
-	topbar.style.animationIterationCount = iterations;
-	bottombar.style.animationIterationCount = iterations;
-	return;
-}
-function prev(n){
-	if(i<=0){
+function displaytext(n){
+	var text = document.getElementById('infotext');
+	var bbar = document.getElementById('bottombar');
+	var tbar = document.getElementById('topbar');
+	if(n==i || n>4){
 		return;
 	}
-	i--;
+	i=n;
+	bbar.style.left="25%";
+	tbar.style.right="25%";
+	text.style.opacity="0";
+	setTimeout(function(){
+		text.innerHTML=info[n-1];
+		bbar.style.left="0%";
+		tbar.style.right="0%";
+		text.style.opacity="1";
+	},1000)
 	return;
 }
+
+

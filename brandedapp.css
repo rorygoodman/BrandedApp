@@ -1,5 +1,5 @@
 html,body{
-	background-image: url("background.png");
+	background-image: url("img/background.png");
 	background-size: cover;
 	padding:0;
 	margin:0;
@@ -25,50 +25,21 @@ html,body{
 	height:90%;
 	width:40%;
 }
-.phones{
-	position:absolute;
-	top:6%;
-	left:14%;
-	height:75%;
-	width:42%;
-
-}
-.slideshow{
-	position:absolute;
-	top:11%;
-	left:4.5%;
-	height:78%;
-	width:91%;
-	
-}
 
 .info{
 	
 	position:absolute;
 	bottom:2%;
+	left:5%;
 	width:70%;
 	height:15%;
 }
-#infotext{
-	color: white;
-	padding-top: 3%;
-	padding-bottom: 10%;
-	font-family: petita;
-	opacity: 1;
-	text-align: center;
-	visibility: visible;
-	animation-name: textappear;
-    animation-duration: 2s;
-    animation-delay:0s;
-    -webkit-animation-iteration-count:1;
-    animation-iteration-count:1;
-    animation-direction:normal;
-    animation-fill-mode: forwards;
+.phones{
+	width:70%;
+	position: absolute;
+	left:0;
 }
-@keyframes textappear{
-	from {opacity:0;}
-    to {opacity:1;}
-}
+
 
 @font-face {
     font-family: petita;
@@ -81,57 +52,82 @@ html,body{
 	width: 40%;
     height: 10%;
     position: absolute;
-    left: 15%;
+    left: 11%;
     top:35%;
     animation-name: text;
     animation-duration: 2s;
+    animation-delay:.5s;
+    animation-fill-mode: forwards;
 }
 @keyframes text{
 	from {left:11%;}
     to {left:15%;}
 }
+#infotext{
+	color: white;
+	padding-bottom: 7%;
+	font-family: petita;
+	opacity: 1;
+	text-align: center;
+	vertical-align: center
+	visibility: visible;
+    transition:opacity 1s;
+}
 #topbar{
 	width:50%;
 	position:absolute;
-	right:0%;
+	right:25%;
 	top:0%;
-	animation-name: topan;
-    animation-duration: 2s;
-    animation-direction:normal;
-    animation-iteration-count:1;
-    animation-fill-mode: forwards;
-    animation-delay:.2s;
-}
-@keyframes topan{
-	from {right:25%;}
-    to {right:0%;}
+	transition:right 1s;
 }
 #bottombar{
 	width:50%;
 	position:absolute;
-	left:0%;
+	left:25%;
 	bottom:0%;
-	animation-name: bottoman;
-    animation-duration: 2s;
-    animation-direction:normal;
-    animation-iteration-count:1;
-    animation-fill-mode: forwards;
-    animation-delay:.2s;
+    transition:left 1s;
 }
-@keyframes bottoman{
-	from {left:25%;}
-    to {left:0%;}
-}
-img.phonecontainer{
-	position: absolute;
-	top:0;
-	height:100%;
-	width:100%;
-}
+
 img.phone{
 	position: absolute;
-	top:0;
-	height:100%;
+	height:65%%;
+}
+#p1{
+	left:0%;
+	bottom:20%;
+	z-index: 4;
+	opacity: 1;
+	height:70%;
+	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
+}
+#p2{
+	left:15%;
+	bottom:25%;
+	z-index: 3;
+	opacity: .66;
+	height:60%;
+	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
+}
+#p3{
+	left:30%;
+	bottom:30%;
+	z-index: 2;
+	opacity: .33;
+	height:40%;
+	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
+}
+#p4{
+	left:40%;
+	z-index: 1;
+	opacity: 0;
+	height:40%;
+	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
+}
+button.imgbtn {
+    border:0;
+     padding:0;
+     outline:0;
+    background:transparent.
 }
 img.bar{
 	position: absolute;
