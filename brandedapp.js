@@ -43,6 +43,25 @@ function next(){
 	return;
 
 }
+function phoneClick(phoneNo){
+	autoplay=false;
+	if(phoneNo==1){
+		phone1();
+	}
+	else if(phoneNo==2){
+		phone2();
+	}
+	else if(phoneNo==3){
+		phone3();
+	}
+	else if(phoneNo==4){
+		phone4();
+	}
+	else{
+		return;
+	}
+	return;
+}
 function phone1(){
 	var phone1 = document.getElementById('p1');
 	var phone2 = document.getElementById('p2');
@@ -172,7 +191,7 @@ function displaytext(n){
 	var text = document.getElementById('infotext');
 	var bbar = document.getElementById('bottombar');
 	var tbar = document.getElementById('topbar');
-	if(n==i || n>4){
+	if( n>4){
 		return;
 	}
 	i=n-1;
