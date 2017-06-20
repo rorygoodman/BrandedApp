@@ -4,7 +4,45 @@ var info = ["Discover and connect with the right people to promote your brand",
   "Beautiful grid listings, discover all your influencers in one place at any time",
   "Formatted menu, explore our application with ease"];
 var i=0;
-var iterations=1;
+var autoplay=true;
+function onLaunch(){
+	setTimeout(function(){
+		phone1();
+		i++;
+	},1500)
+	setInterval(function(){
+		if(autoplay){
+			next();
+		}
+	},4000)
+	return;
+}
+function next(){
+	if(i==info.length){
+		return;
+	}
+	if(i==0){
+		phone1();
+		i++;
+	}
+	else if(i==1){
+		phone2();
+		i++;
+	}
+	else if(i==2){
+		phone3();
+		i++;
+	}
+	else if(i==3){
+		phone4();
+		i++;
+	}
+	else{
+		return;
+	}
+	return;
+
+}
 function phone1(){
 	var phone1 = document.getElementById('p1');
 	var phone2 = document.getElementById('p2');
@@ -106,13 +144,13 @@ function phone4(){
 	var phone4 = document.getElementById('p4');
 	phone1.style.height="40%";
 	phone1.style.opacity ="0";
-	phone1.style.left="0%";
+	phone1.style.left="15%";
 	phone1.style.bottom="30%";
 	phone1.style.zIndex="1";
 
 	phone2.style.height="40%";
 	phone2.style.opacity =".33";
-	phone2.style.left="20%";
+	phone2.style.left="25%";
 	phone2.style.bottom="30%";
 	phone2.style.zIndex="2";
 
@@ -137,14 +175,14 @@ function displaytext(n){
 	if(n==i || n>4){
 		return;
 	}
-	i=n;
-	bbar.style.left="25%";
-	tbar.style.right="25%";
+	i=n-1;
+	tbar.style.left="25%";
+	bbar.style.right="25%";
 	text.style.opacity="0";
 	setTimeout(function(){
 		text.innerHTML=info[n-1];
-		bbar.style.left="0%";
-		tbar.style.right="0%";
+		tbar.style.left="0%";
+		bbar.style.right="0%";
 		text.style.opacity="1";
 	},1000)
 	return;
