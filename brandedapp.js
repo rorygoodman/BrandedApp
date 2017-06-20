@@ -113,7 +113,7 @@ function phone3(){
 	var phone4 = document.getElementById('p4');
 	phone1.style.height="40%";
 	phone1.style.opacity ="0";
-	phone1.style.left="10%";
+	phone1.style.left="5%";
 	phone1.style.bottom="30%";
 	phone1.style.zIndex="2";
 
@@ -144,25 +144,25 @@ function phone4(){
 	var phone4 = document.getElementById('p4');
 	phone1.style.height="40%";
 	phone1.style.opacity ="0";
-	phone1.style.left="15%";
+	phone1.style.left="20%";
 	phone1.style.bottom="30%";
 	phone1.style.zIndex="1";
 
 	phone2.style.height="40%";
 	phone2.style.opacity =".33";
-	phone2.style.left="25%";
+	phone2.style.left="30%";
 	phone2.style.bottom="30%";
 	phone2.style.zIndex="2";
 
 	phone3.style.height="60%";
 	phone3.style.opacity =".66";
-	phone3.style.left="30%";
+	phone3.style.left="35%";
 	phone3.style.bottom="25%";
 	phone3.style.zIndex="3";
 
 	phone4.style.height="70%";
 	phone4.style.opacity ="1";
-	phone4.style.left="40%";
+	phone4.style.left="45%";
 	phone4.style.bottom="20%";
 	phone4.style.zIndex="4";
 	displaytext(4);
