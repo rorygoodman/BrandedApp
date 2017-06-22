@@ -1,7 +1,7 @@
 
 var info = ["Discover and connect with the right people to promote your brand",
  "Personalised profile and integrated social media.You can now rate your top influencers",
-  "Beautiful grid listings, discover all your influencers in one place at any time",
+  "Beautiful grid listings, discover all of your influencers in one place at any time",
   "Formatted menu, explore our application with ease"];
 var i=0;
 var autoplay=true;

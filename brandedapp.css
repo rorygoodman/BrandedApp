@@ -65,7 +65,7 @@ html,body{
 }
 #infotext{
 	color: white;
-	font-size: 120%;
+	font-size:1.5vw;
 	padding-bottom: 7%;
 	font-family: myriad;
 	opacity: 1;
@@ -141,7 +141,7 @@ img.bar{
 }
 img.design{
 	position: absolute;
-    top: 10%;
+    top: 12%;
 	float:left;
 	height:70%;
 }
