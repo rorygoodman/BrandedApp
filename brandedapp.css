@@ -42,18 +42,18 @@ html,body{
 
 
 @font-face {
-    font-family: petita;
-    src: url(PetitaBold.ttf);
+    font-family: myriad;
+    src: url(MyriadProRegular.ttf);
 }
 .text{
-	font-family: petita;
+	font-family: myriad;
 	color: white;
 	z-index: 1;
 	width: 40%;
     height: 10%;
     position: absolute;
     left: 11%;
-    top:35%;
+    top:40%;
     animation-name: text;
     animation-duration: 2s;
     animation-delay:.5s;
@@ -65,8 +65,9 @@ html,body{
 }
 #infotext{
 	color: white;
+	font-size: 120%;
 	padding-bottom: 7%;
-	font-family: petita;
+	font-family: myriad;
 	opacity: 1;
 	text-align: center;
 	vertical-align: center
