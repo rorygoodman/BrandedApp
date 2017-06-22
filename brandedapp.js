@@ -14,9 +14,8 @@ function onLaunch(){
 			next();
 		}
 	},4000)
-	return;
 	},1500)
-	
+	return false;
 }
 function next(){
 	if(i==info.length){
@@ -39,9 +38,9 @@ function next(){
 		i++;
 	}
 	else{
-		return;
+		return false;
 	}
-	return;
+	return false;
 
 }
 function phoneClick(phoneNo){
@@ -59,9 +58,9 @@ function phoneClick(phoneNo){
 		phone4();
 	}
 	else{
-		return;
+		return false;
 	}
-	return;
+	return false;
 }
 function phone1(){
 	var phone1 = document.getElementById('p1');
@@ -92,7 +91,7 @@ function phone1(){
 	phone4.style.bottom="30%";
 	phone4.style.zIndex="1";
 	displaytext(1);
-	return;
+	return false;
 	
 }
 function phone2(){
@@ -124,7 +123,7 @@ function phone2(){
 	phone4.style.bottom="30%";
 	phone4.style.zIndex="2";
 	displaytext(2);
-	return;
+	return false;
 }
 function phone3(){
 	var phone1 = document.getElementById('p1');
@@ -155,7 +154,7 @@ function phone3(){
 	phone4.style.bottom="25%";
 	phone4.style.zIndex="3";
 	displaytext(3);
-	return;
+	return false;
 }
 function phone4(){
 	var phone1 = document.getElementById('p1');
@@ -186,7 +185,7 @@ function phone4(){
 	phone4.style.bottom="20%";
 	phone4.style.zIndex="4";
 	displaytext(4);
-	return;
+	return false;
 }
 function displaytext(n){
 	var text = document.getElementById('infotext');
@@ -205,7 +204,7 @@ function displaytext(n){
 		bbar.style.right="0%";
 		text.style.opacity="1";
 	},1000)
-	return;
+	return false;
 }
 
 

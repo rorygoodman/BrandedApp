@@ -1,6 +1,14 @@
 <head>
 	<title>Branded App</title>
 	<meta charset="UTF-8">
+	<script type="text/javascript">
+		if (screen.width <= 2000) {
+			document.location = "mobile.html";
+		}
+		else if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+  			 location.replace("http://url-to-send-them/iphone.html");
+  		}
+</script>
 	<meta name="pinterest" content="nopin" />
 	<link rel="stylesheet" type="text/css" href="brandedapp.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
