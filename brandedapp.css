@@ -75,6 +75,7 @@ html,body{
 }
 #topbar{
 	width:50%;
+	height:4%;
 	position:absolute;
 	left:25%;
 	top:0%;
@@ -82,6 +83,7 @@ html,body{
 }
 #bottombar{
 	width:50%;
+	height:4%;
 	position:absolute;
 	right:25%;
 	bottom:0%;
@@ -133,12 +135,12 @@ img.bar{
 	position: absolute;
     top: 30%;
 	float: left;
+	z-index: 1;
 	height:35%;
 }
 img.design{
 	position: absolute;
-	padding:-10px%;
-    top: 5%;
+    top: 10%;
 	float:left;
 	height:70%;
 }

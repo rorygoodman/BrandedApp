@@ -9,13 +9,14 @@ function onLaunch(){
 	setTimeout(function(){
 		phone1();
 		i++;
-	},1500)
-	setInterval(function(){
+		setInterval(function(){
 		if(autoplay){
 			next();
 		}
 	},4000)
 	return;
+	},1500)
+	
 }
 function next(){
 	if(i==info.length){
