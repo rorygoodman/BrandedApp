@@ -145,9 +145,9 @@ img.design{
     top: 14%;
 	float:left;
 	height:75%; 
-	-webkit-animation:spin 12s linear infinite;
-    -moz-animation:spin 12s linear infinite;
-    animation:spin 12s linear infinite;
+	-webkit-animation:spin 40s linear infinite;
+    -moz-animation:spin 40s linear infinite;
+    animation:spin 40s linear infinite;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
