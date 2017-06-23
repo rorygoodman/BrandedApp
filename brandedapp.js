@@ -5,14 +5,20 @@ var info = ["Discover and connect with the right people to promote your brand",
   "Beautiful grid listings, discover all of your influencers in one place at any time"];
 var i=0;
 var autoplay=true;
+var backwards=false;
 function onLaunch(){
 	document.getElementById("slotext").style.left="8%";
 	setTimeout(function(){
 		phone1();
-		i++;
 		setInterval(function(){
 		if(autoplay){
-			next();
+			if(!backwards){
+				next();
+			}
+			else{
+				prev();
+			}
+			
 		}
 	},4000)
 	},1500)
@@ -25,19 +31,36 @@ function next(){
 	}
 	if(i==0){
 		phone1();
-		i++;
 	}
 	else if(i==1){
 		phone2();
-		i++;
 	}
 	else if(i==2){
 		phone3();
-		i++;
 	}
 	else if(i==3){
 		phone4();
-		i++;
+		backwards=true;
+	}
+	else{
+		return false;
+	}
+	return false;
+
+}
+function prev(){
+	if(i==0){
+		return;
+	}
+	if(i==2){
+		phone1();
+		backwards=false;
+	}
+	else if(i==3){
+		phone2();
+	}
+	else if(i==4){
+		phone3();
 	}
 	else{
 		return false;
@@ -239,6 +262,7 @@ function displaytext(n){
 			phone4.style.opacity ="1";
 		}
 	},1000)
+	i++;
 	return false;
 }
 
