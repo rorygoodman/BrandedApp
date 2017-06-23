@@ -2,10 +2,11 @@
 var info = ["Discover and connect with the right people to promote your brand",
  "Personalised profile and integrated social media.You can now rate your top influencers",
   "Beautiful grid listings, discover all of your influencers in one place at any time",
-  "Formatted menu, explore our application with ease"];
+  "Formatted menu,</br> explore our application with ease"];
 var i=0;
 var autoplay=true;
 function onLaunch(){
+	document.getElementById("slotext").style.left="8%";
 	setTimeout(function(){
 		phone1();
 		i++;
@@ -15,6 +16,7 @@ function onLaunch(){
 		}
 	},4000)
 	},1500)
+
 	return false;
 }
 function next(){

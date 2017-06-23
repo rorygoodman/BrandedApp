@@ -1,7 +1,7 @@
 body{
+	width:100%;
 	background-image: url("img/backgroundm.png");
 	background-size: cover;
-	width:100%;
 	height:425%;
 	padding: 0;
 	margin:0;
@@ -10,6 +10,7 @@ body{
 .layer1{
 	position: fixed;
 	top:0%;
+	overflow: hidden; 
 	width:100%;
 	height:100%;
 	border-width: 0;
@@ -18,6 +19,12 @@ body{
 .logo{
 	height:50%;
 	margin:auto;
+}
+.slo{
+	height: 20%;
+	width:80%;
+	margin:auto;
+
 }
 .layer2{
 	position: absolute;
@@ -84,7 +91,8 @@ body{
 .buttons{
 	width:80%;
 	height:50%;
-	position:absolute;
+	position:fixed;
+	top:80%;
 	left:10%;
 }
 img.apple{
@@ -96,7 +104,7 @@ img.google{
 	float:left;
 }
 p{
-	font-size:4.5vw;
+	font-size:5vw;
 	font-family: larke;
 	text-align: center;
 }
@@ -113,31 +121,22 @@ a{
 	z-index:0;
 }
 #toplogo{
-	height:100%;
+	width:65%;
 	display: block;
 	margin:auto;
 }
 #slogan{
 	color:black;
-	width:90%;
-	position: absolute;
-	bottom:30%;
-	left:5%;
-
-}
-#bottomfade{
-	position:absolute;
-	width:100%;
-	bottom:0;
+	text-align: center;
 }
 #logo{
 	display: block;
 	width: 40%;
-	position:absolute;
+	position:fixed;
 	bottom:2%;
 	left:30%;
 }
 @font-face {
     font-family: larke;
-    src: url(LarkeNeueThin.ttf);
+    src: url(LarkeNeueRegular.ttf);
 }
