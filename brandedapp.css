@@ -102,8 +102,6 @@ img.phone{
 	z-index: 4;
 	opacity: 0;
 	height:70%;
-	transform: translateX(5%);
-	will-change: transform;
 	transition: height 2s,opacity 1s,left 2s,z-index 2s,bottom 2s;
 }
 #p2{
@@ -144,10 +142,17 @@ img.bar{
 }
 img.design{
 	position: absolute;
-    top: 12%;
+    top: 14%;
 	float:left;
-	height:70%;
+	height:75%; 
+	-webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
 }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 img.logo{
 	padding:30px;
 	float:left;
