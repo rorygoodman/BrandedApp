@@ -47,7 +47,7 @@ html,body{
 #text{
 	color: white;
 	z-index: 1;
-	width: 45%;
+	width: 47%;
     height: 35%;
     position: absolute;
     left: 9%;
@@ -56,11 +56,10 @@ html,body{
 }
 #slotext{
 	position:absolute;
-	vertical-align: middle;
-	font-size:4.5vh;
+	font-size:4.2vh;
 	left: 0%;
-	top:25%;
-	width:90%;
+	top:28%;
+	width:93%;
 	height:40%;
 	transition: left 2s;
 	font-family: myriad;
@@ -105,7 +104,7 @@ img.phone{
 	height:70%;
 	transform: translateX(5%);
 	will-change: transform;
-	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
+	transition: height 2s,opacity 1s,left 2s,z-index 2s,bottom 2s;
 }
 #p2{
 	left:15%;
@@ -113,8 +112,7 @@ img.phone{
 	z-index: 3;
 	opacity: 0;
 	height:60%;
-	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
-	transition-timing-function: ease;
+	transition: height 2s,opacity 1s,left 2s,z-index 2s,bottom 2s;
 }
 #p3{
 	left:30%;
@@ -122,16 +120,14 @@ img.phone{
 	z-index: 2;
 	opacity: 0;
 	height:40%;
-	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
-	transition-timing-function: ease;
+	transition: height 2s,opacity 1s,left 2s,z-index 2s,bottom 2s;
 }
 #p4{
 	left:40%;
 	z-index: 1;
 	opacity: 0;
 	height:40%;
-	transition: height 2s,opacity 2s,left 2s,z-index 2s,bottom 2s;
-	transition-timing-function: ease;
+	transition: height 2s,opacity 1s,left 2s,z-index 2s,bottom 2s;
 }
 button.imgbtn {
     border:0;
