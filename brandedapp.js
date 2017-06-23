@@ -70,19 +70,24 @@ function phone1(){
 	var phone3 = document.getElementById('p3');
 	var phone4 = document.getElementById('p4');
 	phone1.style.height="70%";
-	phone1.style.opacity ="0";
+	if(autoplay){
+		phone1.style.opacity ="1";
+	}
+	else{
+		phone1.style.opacity ="0";
+	}
 	phone1.style.left="0%";
 	phone1.style.bottom="20%";
 	phone1.style.zIndex="4";
 
 	phone2.style.height="60%";
-	phone2.style.opacity ="0";
+	phone2.style.opacity =".5";
 	phone2.style.left="15%";
 	phone2.style.bottom="25%";
 	phone2.style.zIndex="3";
 
 	phone3.style.height="40%";
-	phone3.style.opacity ="0";
+	phone3.style.opacity =".25";
 	phone3.style.left="30%";
 	phone3.style.bottom="30%";
 	phone3.style.zIndex="2";
@@ -102,7 +107,7 @@ function phone2(){
 	var phone3 = document.getElementById('p3');
 	var phone4 = document.getElementById('p4');
 	phone1.style.height="60%";
-	phone1.style.opacity ="0";
+	phone1.style.opacity =".5";
 	phone1.style.left="10%";
 	phone1.style.bottom="25%";
 	phone1.style.zIndex="3";
@@ -114,7 +119,7 @@ function phone2(){
 	phone2.style.zIndex="4";
 
 	phone3.style.height="60%";
-	phone3.style.opacity ="0";
+	phone3.style.opacity =".5";
 	phone3.style.left="35%";
 	phone3.style.bottom="25%";
 	phone3.style.zIndex="3";
@@ -139,7 +144,7 @@ function phone3(){
 	phone1.style.zIndex="2";
 
 	phone2.style.height="60%";
-	phone2.style.opacity ="0";
+	phone2.style.opacity =".5";
 	phone2.style.left="15%";
 	phone2.style.bottom="25%";
 	phone2.style.zIndex="3";
@@ -151,7 +156,7 @@ function phone3(){
 	phone3.style.zIndex="4";
 
 	phone4.style.height="60%";
-	phone4.style.opacity ="0";
+	phone4.style.opacity =".5";
 	phone4.style.left="40%";
 	phone4.style.bottom="25%";
 	phone4.style.zIndex="3";
@@ -170,13 +175,13 @@ function phone4(){
 	phone1.style.zIndex="1";
 
 	phone2.style.height="40%";
-	phone2.style.opacity ="0";
+	phone2.style.opacity =".25";
 	phone2.style.left="30%";
 	phone2.style.bottom="30%";
 	phone2.style.zIndex="2";
 
 	phone3.style.height="60%";
-	phone3.style.opacity ="0";
+	phone3.style.opacity =".5";
 	phone3.style.left="35%";
 	phone3.style.bottom="25%";
 	phone3.style.zIndex="3";
