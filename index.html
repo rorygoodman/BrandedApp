@@ -2,11 +2,14 @@
 	<title>Branded App</title>
 	<meta charset="UTF-8">
 	<script type="text/javascript">
-		var w= window.innerWidth;
-		var h=window.innerHeight;
-		if (h>w) {
-			document.location = "mobile.html";
-		}
+		setInterval(function(){
+			var w= window.innerWidth;
+			var h=window.innerHeight;
+			if (w<h) {
+				document.location = "mobile.html";
+			}
+				
+		},500)
 	</script>
 	<meta name="pinterest" content="nopin" />
 	<link rel="stylesheet" type="text/css" href="brandedapp.css">

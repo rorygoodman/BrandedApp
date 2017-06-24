@@ -1,6 +1,22 @@
 <head>
 	<title>Branded App</title>
 	<meta charset="UTF-8">
+	<script type="text/javascript">
+		var w= window.innerWidth;
+		var h=window.innerHeight;
+		if (h<w) {
+			document.location = "index.html";
+		}
+		setInterval(function(){
+			var w= window.innerWidth;
+			var h=window.innerHeight;
+			if (h<w) {
+				document.location = "index.html";
+			}
+				
+		},500)
+		
+	</script>
 	<link rel="stylesheet" type="text/css" href="mobile.css">
 
 </head>
