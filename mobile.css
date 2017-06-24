@@ -86,13 +86,6 @@ body{
 	width:80%;
 	margin:auto;
 }
-.bottom{
-	position: fixed;
-	top:75%;
-	height:50%;
-	width:100%;
-	z-index:1;
-}
 .buttons{
 	width:90%;
 	height:10vh;
