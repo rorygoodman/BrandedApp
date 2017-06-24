@@ -74,12 +74,11 @@ body{
 	z-index:1;
 }
 .phonediv{
-	width:55%;
-	height:70%;
+	width:45%;
 	position: absolute;
 	bottom:0;
 	border-width: 0;
-	left:22.5%;
+	left:27.5%;
 
 }
 .ptext{
@@ -121,7 +120,7 @@ p.phonetext{
 img.phone{
 	display: block;
 	margin:auto;
-	height:100%;
+	width:100%;
 }
 a{
 	z-index:0;
