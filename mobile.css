@@ -6,6 +6,7 @@ body{
 	padding: 0;
 	margin:0;
 	border-width: 0;
+	z-index: -2;
 }
 .layer1{
 	position: fixed;
@@ -15,13 +16,13 @@ body{
 	height:100%;
 	border-width: 0;
 	z-index:0;
-	
 }
 .logo{
 	height:50%;
 	position: fixed;
 	top:5%;
 	margin:auto;
+	z-index:-1;
 }
 .slo{
 	height: 20vh;
@@ -29,6 +30,7 @@ body{
 	position: fixed;
 	bottom:25%;
 	padding-left: 10%;
+
 }
 .layer2{
 	position: absolute;
