@@ -2,11 +2,14 @@ body{
 	width:100%;
 	background-image: url("img/backgroundm.png");
 	background-size: cover;
-	height:395vh;
 	padding: 0;
 	margin:0;
 	border-width: 0;
 	z-index: 0
+}
+#container{
+	height: 100px;
+	width:100%;
 }
 .layer1{
 	position: fixed;
