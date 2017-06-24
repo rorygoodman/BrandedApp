@@ -1,8 +1,8 @@
 
 var info = ["Discover and connect with the right people to promote your brand",
- "Personalised profile and integrated social media.You can now rate your top influencers",
+ "Beautiful grid listings, discover all of your influencers in one place at any time",
   "Formatted menu,</br> explore our application with ease",
-  "Beautiful grid listings, discover all of your influencers in one place at any time"];
+  "Personalised profile and integrated social media.You can now rate your top influencers"];
 var i=0;
 var autoplay=true;
 var backwards=false;
@@ -11,16 +11,16 @@ function onLaunch(){
 	setTimeout(function(){
 		phone1();
 		setInterval(function(){
-		if(autoplay){
-			if(!backwards){
-				next();
-			}
-			else{
-				prev();
-			}
+			if(autoplay){
+				if(!backwards){
+					next();
+				}	
+				else{
+					prev();
+				}
 			
-		}
-	},4000)
+			}
+		},4000)
 	},1500)
 
 	return false;
