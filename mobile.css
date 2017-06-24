@@ -18,10 +18,10 @@ body{
 	z-index:0;
 }
 .logo{
-	height:50%;
+	width:75%;
 	position: fixed;
 	top:5%;
-	margin:auto;
+	left:12.5%;
 	z-index:0;
 }
 .slo{
