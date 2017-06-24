@@ -42,7 +42,7 @@ html,body{
 
 @font-face {
     font-family: myriad;
-    src: url(MyriadProRegular.ttf);
+    src: url(fonts/MyriadProRegular.ttf);
 }
 #text{
 	color: white;
