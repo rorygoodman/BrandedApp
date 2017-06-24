@@ -18,10 +18,10 @@ body{
 	z-index:0;
 }
 .logo{
-	width:75%;
+	width:70%;
 	position: fixed;
 	top:5%;
-	left:12.5%;
+	left:15%;
 	z-index:0;
 }
 .slo{
@@ -126,8 +126,7 @@ a{
 	z-index:0;
 }
 #toplogo{
-	width:65%;
-	display: block;
+	width:100%;
 	margin:auto;
 	z-index: 0;
 }
