@@ -18,13 +18,13 @@ body{
 	
 }
 .logo{
-	height:50%;
+	height:50vh;
 	position: fixed;
-	top:5%;
+	top:5vh;
 	margin:auto;
 }
 .slo{
-	height: 20%;
+	height: 20vh;
 	width:80%;
 	position: fixed;
 	bottom:30%;
@@ -94,9 +94,9 @@ body{
 }
 .buttons{
 	width:90%;
-	height:10%;
+	height:10vh;
 	position:fixed;
-	bottom:2%;
+	bottom:2vh;
 	left:5%;
 }
 img.apple{
