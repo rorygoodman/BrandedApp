@@ -18,22 +18,22 @@ body{
 	
 }
 .logo{
-	height:50vh;
+	height:50%;
 	position: fixed;
-	top:5vh;
+	top:5%;
 	margin:auto;
 }
 .slo{
 	height: 20vh;
 	width:80%;
 	position: fixed;
-	bottom:30%;
+	bottom:25%;
 	padding-left: 10%;
 }
 .layer2{
 	position: absolute;
 	background-image: url("img/blue.png");
-	top:75vh;
+	top:75%;
 	width:90%;
 	margin-left:5%;
 	height:75%;
@@ -44,7 +44,7 @@ body{
 .layer3{
 	position: absolute;
 	background-image: url("img/yellow.png");
-	top:150vh;
+	top:150%;
 	width:90%;
 	margin-left:5%;
 	border-width: 0;
@@ -54,7 +54,7 @@ body{
 .layer4{
 	position: absolute;
 	background-image: url("img/grey.png");
-	top:225vh;
+	top:225%;
 	width:90%;
 	margin-left:5%;
 	border-width: 0;
@@ -64,7 +64,7 @@ body{
 .layer5{
 	position: absolute;
 	background-image: url("img/yellow.png");
-	top:300vh;
+	top:300%;
 	width:90%;
 	margin-left:5%;
 	border-width: 0;
