@@ -1,7 +1,9 @@
+
+	
+
 body{
 	width:100%;
-	background-image: url("img/backgroundm.png");
-	background-size: cover;
+	
 	height:0px;
 	padding: 0;
 	margin:0;
@@ -11,6 +13,7 @@ body{
 #container{
 	background-image: url("img/backgroundm.png");
 	background-size: cover;
+	border-style: solid;
 	height: 0px;
 	width:100%;
 }
