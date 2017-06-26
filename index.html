@@ -1,7 +1,13 @@
 <head>
 	<title>Branded App</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="favicon/png" />
 	<meta charset="UTF-8">
 	<script type="text/javascript">
+		var w= window.innerWidth;
+		var h=window.innerHeight;
+		if (w<h) {
+			document.location = "mobile.html";
+		}
 		setInterval(function(){
 			var w= window.innerWidth;
 			var h=window.innerHeight;

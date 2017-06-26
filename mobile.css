@@ -138,7 +138,10 @@ a{
 	margin:auto;
 	z-index: 0;
 }
-#slogan{
+#slogant{
+	color:white;
+}
+#sloganb{
 	color:gray;
 }
 @font-face {
