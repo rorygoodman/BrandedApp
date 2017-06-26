@@ -13,7 +13,6 @@ body{
 #container{
 	background-image: url("img/backgroundm.png");
 	background-size: 100% 115%;
-	border-style: solid;
 	height: 0px;
 	width:100%;
 }
