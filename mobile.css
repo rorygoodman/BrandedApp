@@ -33,7 +33,7 @@ body{
 .slo{
 	height: 20vh;
 	width:80%;
-	position: fixed;
+	position: absolute;
 	bottom:25%;
 	padding-left: 10%;
 
@@ -96,7 +96,7 @@ body{
 	width:90%;
 	height:10vh;
 	position:absolute;
-	bottom:2vh;
+	bottom:2%;
 	left:5%;
 }
 img.apple{
