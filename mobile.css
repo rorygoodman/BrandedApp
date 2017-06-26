@@ -15,12 +15,11 @@ body{
 	width:100%;
 }
 .layer1{
-	position: fixed;
+	position: absolute;
 	top:0%;
 	overflow: hidden; 
 	width:100%;
 	height:100%;
-	border-width: 0;
 	z-index:0;
 }
 .logo{
@@ -79,6 +78,14 @@ body{
 	height:75%;
 	z-index:1;
 }
+.layer6{
+	position: absolute;
+	top:375%;
+	overflow: hidden; 
+	width:100%;
+	height:100%;
+	z-index:0;
+}
 .phonediv{
 	width:50%;
 	position: absolute;
@@ -94,9 +101,9 @@ body{
 }
 .buttons{
 	width:90%;
-	height:10vh;
+	height:5%;
 	position:absolute;
-	bottom:2%;
+	top:90%;
 	left:5%;
 }
 img.apple{
@@ -131,7 +138,6 @@ a{
 }
 #slogan{
 	color:gray;
-	text-align: center;
 }
 @font-face {
     font-family: larke;
