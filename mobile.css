@@ -95,7 +95,7 @@ body{
 .buttons{
 	width:90%;
 	height:10vh;
-	position:fixed;
+	position:absolute;
 	bottom:2vh;
 	left:5%;
 }
