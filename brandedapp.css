@@ -84,7 +84,9 @@ html,body{
 	position:absolute;
 	left:25%;
 	top:0%;
-	transition:left 1s;
+	transform:translate(0,0);
+	will-change:transform;
+	transition: transform 1s;
 }
 #bottombar{
 	width:50%;
@@ -92,7 +94,9 @@ html,body{
 	position:absolute;
 	right:25%;
 	bottom:10%;
-    transition:right 1s;
+	transform:translate(0,0);
+	will-change:transform;
+    transition: transform 1s;
 }
 
 img.phone{

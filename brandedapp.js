@@ -229,13 +229,13 @@ function displaytext(n){
 		return;
 	}
 	i=n-1;
-	tbar.style.left="25%";
-	bbar.style.right="25%";
+	tbar.style.transform="translate(0,0";
+	bbar.style.transform="translate(0,0)";
 	text.style.opacity="0";
 	setTimeout(function(){
 		text.innerHTML=info[n-1];
-		tbar.style.left="0%";
-		bbar.style.right="0%";
+		tbar.style.transform="translate(-50%,0)";
+		bbar.style.transform="translate(50%,0)";
 		text.style.opacity="1";
 		if(n==1){
 			phone1.style.opacity ="1";
